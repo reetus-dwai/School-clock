@@ -1,11 +1,11 @@
 :root {
-  --main_bc: #3d3d3d;
-  --main_c: #e3e3e3;
+  --dark: #222222;
+  --light: #e3e3e3;
 }
 
 body {
-  background: main_bc;
-  color: main_c;
+  background: var(--dark);
+  color: var(--light);
 }
 
 #time {
@@ -13,3 +13,4 @@ body {
   left: 50%;
   top: 0;
 }
+
