@@ -1,6 +1,6 @@
 :root {
-  --main_bc: black;
-  --main_c: white;
+  --main_bc: #3d3d3d;
+  --main_c: #e3e3e3;
 }
 
 body {
