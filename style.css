@@ -8,7 +8,7 @@ body {
   color: var(--light);
 }
 
-#time {
+.time {
   position: absolute;
   left: 50%;
   top: 0;
