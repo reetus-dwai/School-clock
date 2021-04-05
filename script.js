@@ -3,6 +3,7 @@ function showTime(){
   let time = hour + ":" + minute;
   
   document.getElementById("time").innerHTML = time;
+  document.getElementById("time").textContent = time;
   setTimeout(showTime, 1000);
 }
 
