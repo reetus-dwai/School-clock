@@ -8,3 +8,8 @@ body {
   color: main_c;
 }
 
+#time {
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
