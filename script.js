@@ -3,7 +3,7 @@ function showTime(){
     var hour = date.getHours(); // 0 - 23
     var min = date.getMinutes(); // 0 - 59
     var month = date.getMonth(); //0 - 11
-    var day = date.getDay();
+    var day = date.getDate();
     var year = date.getFullYear();
     var session = "AM";
     
