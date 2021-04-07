@@ -29,8 +29,15 @@ div {
   height: 2.4em;
   word-wrap: normal;
   --padding: .15em;
+  --radius: .2em;
   padding-left: var(--padding);
   padding-right: var(--padding);
-  border-radius: .2em;
+  border-radius: var(--radius);
+  box-shadow: 0px 0px 10px var(--accent);
+}
+
+#next_period {
+  padding: var(--padding);
+  border-radius: var(--radius);
   box-shadow: 0px 0px 10px var(--accent);
 }

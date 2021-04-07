@@ -25,7 +25,14 @@ function showTime(){
     var time_date = "\n"+ month + "/" + day  + "/" + year;
     var time = hour + ":" + min  + " " + session;
     document.getElementById("time").innerText = time + time_date;
-    document.getElementById("time").textContent = time + time_date;  
+    document.getElementById("time").textContent = time + time_date;
+
+    var period = "4ab";
+    var deltaT = 10;
+    var next_period = "Period " + period + " in: " + deltaT;
+    document.getElementById("next_period").innerText = next_period;
+    document.getElementById("next_period").textContent = next_period;
+
 
     setTimeout(showTime, 1000);
 }
