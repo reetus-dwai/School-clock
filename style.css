@@ -9,19 +9,35 @@ body {
   color: var(--light);
 }
 
+div {
+  width: fit-content;
+}
+
 .time {
+  width: initial;
   text-align: center;
   font-size: 4em;
   position: relative;
   top: 5vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-#time {
+#time,#date {
+  display: block;
   --padding: .15em;
   padding-left: var(--padding);
   padding-right: var(--padding);
-  border-radius: .2em;
+  border-radius: .2em .2em 0 0;
   box-shadow: 0px 0px 10px var(--accent);
+}
+
+#time {
+  width: max-content;
+}
+
+#date {
+  border-radius: 0 0 .2em .2em;
+  width: inherit;
 }

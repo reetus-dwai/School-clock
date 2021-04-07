@@ -25,7 +25,9 @@ function showTime(){
     document.getElementById("time").innerText = time;
     document.getElementById("time").textContent = time;
     
-    console.log(month + "/" + day + "/" + year)
+    var time_date = month + "/" + day  + "/" + year;
+    document.getElementById("date").innerText = time_date;
+    document.getElementById("date").textContent = time_date;
 
     setTimeout(showTime, 1000);
 }
