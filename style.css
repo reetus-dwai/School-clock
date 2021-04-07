@@ -25,19 +25,10 @@ div {
 }
 
 #time,#date {
-  display: block;
+  width: max-content;
   --padding: .15em;
   padding-left: var(--padding);
   padding-right: var(--padding);
-  border-radius: .2em .2em 0 0;
+  border-radius: .2em .2em;
   box-shadow: 0px 0px 10px var(--accent);
-}
-
-#time {
-  width: max-content;
-}
-
-#date {
-  border-radius: 0 0 .2em .2em;
-  width: inherit;
 }

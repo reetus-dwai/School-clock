@@ -21,13 +21,10 @@ function showTime(){
     hour = (hour < 10) ? "0" + hour: hour;
     min = (min  < 10) ? "0" + min: min;
 
-    var time = hour + ":" + min  + " " + session;
-    document.getElementById("time").innerText = time;
-    document.getElementById("time").textContent = time;
-    
-    var time_date = month + "/" + day  + "/" + year;
-    document.getElementById("date").innerText = time_date;
-    document.getElementById("date").textContent = time_date;
+    var time_date = "\n"+ month + "/" + day  + "/" + year;
+    var time = hour + ":" + min  + " " + session + "\nj";
+    document.getElementById("time").innerText = time + time_date;
+    document.getElementById("time").textContent = time + time_date;  
 
     setTimeout(showTime, 1000);
 }
