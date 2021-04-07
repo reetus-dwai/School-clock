@@ -18,7 +18,7 @@ function showTime(){
 
     month += 1;
     
-    hour = (hour < 10) ? "0" + hour: hour;
+    // hour = (hour < 10) ? "0" + hour: hour;
     min = (min  < 10) ? "0" + min: min;
 
     var time_date = "\n"+ month + "/" + day  + "/" + year;
