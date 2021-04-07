@@ -17,6 +17,7 @@ function showTime(){
     }
 
     month += 1;
+    year -= 2000;
     
     // hour = (hour < 10) ? "0" + hour: hour;
     min = (min  < 10) ? "0" + min: min;

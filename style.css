@@ -15,20 +15,22 @@ div {
 
 .time {
   width: initial;
+  height: fit-content;
   text-align: center;
   font-size: 4em;
   position: relative;
   top: 5vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
-#time,#date {
-  width: fit-content;
+#time {
+  width: 4em;
+  height: 2.4em;
+  word-wrap: normal;
   --padding: .15em;
   padding-left: var(--padding);
   padding-right: var(--padding);
-  border-radius: .2em .2em;
+  border-radius: .2em;
   box-shadow: 0px 0px 10px var(--accent);
 }
