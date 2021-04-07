@@ -1,6 +1,7 @@
 :root {
-  --dark: #222222;
+  --dark: #252525;
   --light: #e3e3e3;
+  --accent: #c58b3f;
 }
 
 body {
@@ -8,9 +9,19 @@ body {
   color: var(--light);
 }
 
-#time {
-  position: absolute;
-  left: 50%;
-  top: 0;
+.time {
+  text-align: center;
+  font-size: 4em;
+  position: relative;
+  top: 5vh;
+  display: flex;
+  justify-content: center;
 }
 
+#time {
+  --padding: .15em;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  border-radius: .2em;
+  box-shadow: 0px 0px 10px var(--accent);
+}
