@@ -22,7 +22,7 @@ function showTime(){
     min = (min  < 10) ? "0" + min: min;
 
     var time_date = "\n"+ month + "/" + day  + "/" + year;
-    var time = hour + ":" + min  + " " + session + "\nj";
+    var time = hour + ":" + min  + " " + session;
     document.getElementById("time").innerText = time + time_date;
     document.getElementById("time").textContent = time + time_date;  
 

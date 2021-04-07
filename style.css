@@ -25,7 +25,7 @@ div {
 }
 
 #time,#date {
-  width: max-content;
+  width: fit-content;
   --padding: .15em;
   padding-left: var(--padding);
   padding-right: var(--padding);
