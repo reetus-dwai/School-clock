@@ -174,16 +174,16 @@ function deltaT(h, m, p){
       deltaM = 60 - min;
     }
   } else if (period == "4AB"){
-    if (min == 45){
+    if (min -= 45){
       if (hour == 12){
         deltaH = 1
       } else {
         deltaH = 0
       }
-      deltaM = 0;
-    } else {//work on this
-      deltaH = 11 - hour;
-      deltaM = 60 - min;
+      deltaM = 45 - min;
+    } else {
+      deltaH = 0;
+      deltaM = 45 + (60 - min);
     }
   }
   

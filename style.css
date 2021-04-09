@@ -33,16 +33,16 @@ div {
   word-wrap: normal;
   padding: var(--padding);
   border-radius: var(--radius);
-  box-shadow: 0px 0px 10px var(--light);
-  background: var(--accent);
-  color: var(--dark);
+  box-shadow: 0px 0px 10px var(--accent);
+  background: var(--dark);
+  color: var(--light);
 }
 
 #next_period {
   width: 6em;
   padding: var(--padding);
   border-radius: var(--radius);
-  box-shadow: 0px 0px 10px var(--light);
-  background: var(--accent);
-  color: var(--dark);
+  box-shadow: 0px 0px 10px var(--accent);
+  background: var(--padding);
+  color: var(--light);
 }
