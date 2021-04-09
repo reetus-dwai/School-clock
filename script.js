@@ -85,7 +85,7 @@ function showTime(){
     document.getElementById("time").textContent = time + time_date;
 
     //Next period stuff
-    var next_period = "Period " + period(hour, min, session, week) + " in: " + deltaT(hour, min, period(hour, min, session, week, day_of_the_week), session);
+    var next_period = "Period " + period(hour, min, session, week) + " in: " + deltaT(hour, min, period(hour, min, session, week), session,  day_of_the_week);
     document.getElementById("next_period").innerText = next_period;
     document.getElementById("next_period").textContent = next_period;
 
@@ -145,8 +145,8 @@ function deltaT(h, m, p, s, d){
   var hour = h;
   var min = m;
   var session = s;
-  var day_of_the_week = d;
-
+  var day = d;
+  
   var deltaH;
   var deltaM;
 
@@ -156,11 +156,27 @@ function deltaT(h, m, p, s, d){
   if (period == "1A" || period == "1B"){
     if (session == "PM"){
       if (min <= 50){
-        deltaH = 12 - hour + 7 + 48;
-        deltaM = 50 - min;
+        if (day == 5){
+          deltaH = 12 - hour + 7 + 48;
+          deltaM = 50 - min;
+        } else if (day == 6){
+          deltaH = 12 - hour + 7 + 24;
+          deltaM = 50 - min;
+        } else {
+          deltaH = 12 - hour + 7;
+          deltaM = 50 - min;
+        }
       } else {
-        deltaH = 12 - hour + 6 + 48;
-        deltaM = 60 - min;
+        if (day == 5){
+          deltaH = 12 - hour + 6 + 48;
+          deltaM = 60 - min;
+        } else if (day == 6){
+          deltaH = 12 - hour + 6 + 24;
+          deltaM = 60 - min;
+        } else {
+          deltaH = 12 - hour + 6;
+          deltaM = 60 - min;
+        }
       }
     }
   } else if (period == "2A" || period == "2B"){
