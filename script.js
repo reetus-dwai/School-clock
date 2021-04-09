@@ -150,6 +150,21 @@ function deltaT(h, m, p){
   //   }
   // }
 
+
+    /*
+ else if (period == "2A" || period == "2B"){
+    if (min == 0){
+      deltaH = 12 - hour;
+      deltaM = 0;
+    } else {
+      deltaH = 11 - hour;
+      deltaM = 60 - min;
+    }
+  }
+    */
+
+
+
   if (period == "3A" || period == "3B"){
     if (min == 0){
       deltaH = 12 - hour;
@@ -158,18 +173,20 @@ function deltaT(h, m, p){
       deltaH = 11 - hour;
       deltaM = 60 - min;
     }
-  }
-  /*
-  else if (period == "4AB"){
-    if (min == 0){
-      deltaH = 12 - hour;
+  } else if (period == "4AB"){
+    if (min == 45){
+      if (hour == 12){
+        deltaH = 1
+      } else {
+        deltaH = 0
+      }
       deltaM = 0;
-    } else {
+    } else {//work on this
       deltaH = 11 - hour;
       deltaM = 60 - min;
     }
   }
-  */
+  
 
   if (deltaM == 0){
     if (deltaH == 1){
@@ -192,11 +209,10 @@ function deltaT(h, m, p){
       }
     } else { 
       if (deltaM == 1){
-        return (deltaH + " hour and " + deltaM + " minute");
+        return (deltaH + " hours and " + deltaM + " minute");
       } else {
-        return (deltaH + " hour and " + deltaM + " minutes");
+        return (deltaH + " hours and " + deltaM + " minutes");
       }
-      return (deltaH + " hours and " + deltaM + " minutes");
     }
   }
 }
