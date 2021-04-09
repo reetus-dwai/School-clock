@@ -28,7 +28,7 @@ div {
 }
 
 #time {
-  width: 4em;
+  width: 5em;
   height: 2.4em;
   word-wrap: normal;
   padding: var(--padding);
