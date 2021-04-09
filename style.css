@@ -2,6 +2,8 @@
   --dark: #252525;
   --light: #e3e3e3;
   --accent: #c58b3f;
+  --padding: .1em;
+  --radius: .2em;
 }
 
 body {
@@ -15,29 +17,32 @@ div {
 
 .time {
   width: initial;
-  height: fit-content;
+  height: 100vh;
   text-align: center;
   font-size: 4em;
-  position: relative;
-  top: 5vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
 }
 
 #time {
   width: 4em;
   height: 2.4em;
   word-wrap: normal;
-  --padding: .15em;
-  --radius: .2em;
-  padding-left: var(--padding);
-  padding-right: var(--padding);
+  padding: var(--padding);
   border-radius: var(--radius);
-  box-shadow: 0px 0px 10px var(--accent);
+  box-shadow: 0px 0px 10px var(--light);
+  background: var(--accent);
+  color: var(--dark);
 }
 
 #next_period {
+  width: 6em;
   padding: var(--padding);
   border-radius: var(--radius);
-  box-shadow: 0px 0px 10px var(--accent);
+  box-shadow: 0px 0px 10px var(--light);
+  background: var(--accent);
+  color: var(--dark);
 }

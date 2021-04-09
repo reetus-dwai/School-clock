@@ -27,14 +27,18 @@ function showTime(){
     document.getElementById("time").innerText = time + time_date;
     document.getElementById("time").textContent = time + time_date;
 
-    var period = "4ab";
-    var deltaT = 10;
-    var next_period = "Period " + period + " in: " + deltaT;
+    var deltaT
+    var next_period = "Period " + period(hour, min) + " in: " + deltaT() + " minutes";
     document.getElementById("next_period").innerText = next_period;
     document.getElementById("next_period").textContent = next_period;
 
 
     setTimeout(showTime, 1000);
+}
+
+function period(hour, min){
+  var periods["1A", "2A", "3A", "4AB", "1B", "2B", "3B"]
+
 }
 
 showTime();
