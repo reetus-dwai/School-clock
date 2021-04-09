@@ -17,14 +17,13 @@ div {
 
 .time {
   width: initial;
-  height: 100vh;
+  height: 97vh;
   text-align: center;
   font-size: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0;
 }
 
 #time {
@@ -34,15 +33,24 @@ div {
   padding: var(--padding);
   border-radius: var(--radius);
   box-shadow: 0px 0px 10px var(--accent);
-  background: var(--dark);
   color: var(--light);
 }
 
 #next_period {
-  width: 6em;
+  width: 6.25em;
   padding: var(--padding);
   border-radius: var(--radius);
   box-shadow: 0px 0px 10px var(--accent);
-  background: var(--padding);
   color: var(--light);
+}
+
+#day {
+  position: absolute;
+  top: 1em;
+  text-align: center;
+  color: var(--light);
+  font-size: .75em;
+  border-radius: var(--radius);
+  padding: var(--padding);
+  box-shadow: 0px 0px 10px var(--accent);
 }
